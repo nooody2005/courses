@@ -1,0 +1,286 @@
+ body {
+      margin: 0;
+      font-family: 'Cairo', Arial, sans-serif;
+      background: #f7f8fa;
+    }
+
+    .header {
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+      padding: 0;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 40px;
+    }
+
+    .menu-item.collapsible {
+      width: 50px;
+      height: 50px;
+      margin-top: 15px;
+    }
+
+    .user_image img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+
+    .logo img {
+      width: 70px;
+      height: 70px;
+      padding-left: 100px;
+    }
+
+    .navigation {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .side_bar {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      position: relative;
+    }
+
+    .user_image {
+      width: 40px;
+      height: 40px;
+      background: #eee url('/courses/image/address.jpg') center/cover no-repeat;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .submenu {
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background: #fff;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+      border-radius: 8px;
+      min-width: 220px;
+      z-index: 10;
+      padding: 15px 0;
+      display: none;
+    }
+
+    .submenu a,
+    .settings-options a {
+      display: block;
+      padding: 10px 24px;
+      text-decoration: none;
+      color: #333;
+      font-size: 15px;
+      transition: background 0.2s;
+    }
+
+    .submenu a:hover,
+    .settings-options a:hover {
+      background: #f0f0f0;
+      color: #007bff;
+    }
+
+    .settings-toggle {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 24px;
+      cursor: pointer;
+    }
+
+    .settings-options {
+      display: none;
+      border-top: 1px solid #eee;
+      margin-top: 5px;
+    }
+
+    .course_container {
+      display: flex;
+      gap: 32px;
+      max-width: 1200px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+      padding: 32px;
+    }
+
+    .video-section {
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+      /* align-items: center;
+      justify-content: flex-start; */
+    }
+
+    #courseVideo {
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.10);
+      margin-bottom: 18px;
+      background: #000;
+    }
+
+    .course-info {
+      text-align: left;
+      width: 100%;
+      margin-top: 8px;
+    }
+
+    .course-info h1 {
+      font-size: 2rem;
+      color: #222;
+      margin-bottom: 6px;
+    }
+
+    .course-info p {
+      color: #666;
+      font-size: 1rem;
+    }
+
+    .sidebar {
+      flex: 1;
+      background: #f5f7fa;
+      border-radius: 12px;
+      box-shadow: 0 1px 8px rgba(0, 0, 0, 0.05);
+      padding: 24px 18px;
+      min-width: 220px;
+      height: fit-content;
+    }
+
+    .sidebar h2 {
+      font-size: 1.2rem;
+      color: #007bff;
+      margin-bottom: 18px;
+      text-align: center;
+    }
+
+    .section ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .section li {
+      margin-bottom: 12px;
+    }
+
+    .section a {
+      display: block;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+      padding: 10px 16px;
+      color: #333;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: background 0.2s, color 0.2s;
+      cursor: pointer;
+    }
+
+    .section a:hover {
+      background: #e3f0ff;
+      color: #007bff;
+    }
+
+    .tabs-nav {
+      display: flex;
+      border-bottom: 1px solid #e0e0e0;
+      margin-bottom: 24px;
+      gap: 20px;
+    }
+
+    .tabs-nav a {
+      text-decoration: none;
+      color: #555;
+      padding: 10px 4px;
+      font-size: 16px;
+      font-weight: 600;
+      position: relative;
+    }
+
+    .tabs-nav a.active {
+      color: #000;
+    }
+
+    .tabs-nav> a.active::after {
+      content: "";
+      width: 100%;
+      height: 2px;
+      background-color: #6195ff;
+      display: block;
+      margin-top: 2px;
+    }
+
+    .tabs-nav> a::after {
+      content: "";
+      width: 0%;
+      height: 2px;
+      background-color: #6195ff;
+      display: block;
+      margin-top: 2px;
+      transition: 0.3s;
+    }
+
+    .tabs-nav> a:hover::after {
+      width: 100%;
+    }
+
+    .stats {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+
+    .stats .rating {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .stats .rating .score {
+      font-weight: bold;
+      color: #b4690e;
+      font-size: 15px;
+    }
+
+    .stats .fa-star {
+      color: #f2c110;
+    }
+
+    .stats .ratings-count,
+    .stats .students,
+    .stats .duration {
+      font-size: 14px;
+      color: #555;
+    }
+
+    .stats .students-count,
+    .stats .duration-time {
+      font-weight: bold;
+      color: #333;
+      margin-right: 4px;
+    }
+
+    .meta-info {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      font-size: 14px;
+    }
+
+    .meta-info div {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .meta-info i {
+      color: #555;
+    }

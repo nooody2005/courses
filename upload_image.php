@@ -11,12 +11,12 @@
     <div class="login-visual">
             <div class="visual-content">
                 <img src="/courses/image/Group1.svg" alt="Platform Logo" class="visual-logo">
-                <h2 class="visual-title">Welcome to Learning</h2>
+                <h2 class="visual-title">Learn Without Limits</h2>
             </div>
-    </div>
+     </div>
         <div class="login-form-container">
             
-         <form method="POST" class="login-form">
+         <form method="POST" class="login-form" action="/courses/main.php">
         <label for="image">upload your profile pic</label>
          <input type="file" name="image" id="image" required>
 <!-- where the profile pic will be uploaded and displayed to the user

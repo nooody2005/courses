@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up - Learning Platform</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="/courses/assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="login-container">
         <div class="login-visual">
             <div class="visual-content">
-                <img src="image/Group1.svg" alt="Platform Logo" class="visual-logo">
+                <img src="/courses/image/Group1.svg" alt="Platform Logo" class="visual-logo">
                 <h2 class="visual-title">Join Our Learning Community</h2>
             </div>
         </div>
@@ -21,7 +21,7 @@
                     <h1 class="form-title">Create your account</h1>
                     <p class="form-subtitle">Learn fullstack from our top tutors!</p>
                 </div>
-                <form method="POST" class="login-form">
+                <form method="POST" class="login-form" action="/courses/upload_image.php">
                     <div class="form-row">
                         <div class="form-group">
                             <label for="fullname" class="form-label">Full Name</label>

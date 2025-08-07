@@ -12,7 +12,7 @@
         <div class="login-visual">
             <div class="visual-content">
                 <img src="/courses/image/Group1.svg" alt="Platform Logo" class="visual-logo">
-                <h2 class="visual-title">Welcome to Learning</h2>
+                <h2 class="visual-title">Learn Without Limits</h2>
             </div>
         </div>
         <div class="login-form-container">
@@ -22,7 +22,7 @@
                     <p class="form-subtitle">Sign in to continue your learning journey</p>
                 </div>
 
-                <form method="POST" class="login-form">
+                <form method="POST" class="login-form" action="/courses/main.php">
                     <div class="form-group">
                         <label for="email" class="form-label">Email Address</label>
                         <input 

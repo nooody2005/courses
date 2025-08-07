@@ -5,17 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learning Platform</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="/courses/assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header class="header">
         <div class="container">
+            <!-- <div class="side-menu">
+                <img src="./image/side-menu.svg" alt="">
+            </div> -->
             <div class="logo">
                 <a href="index.php">
-                    <img src="image/logo page.svg" alt="Platform Logo" />
+                    <img src="/courses/image/logo page.svg" alt="Platform Logo" />
                 </a>
+                <span>
+                    Courses</span>
             </div>
             <nav class="navigation">
                 <a href="log in.php" class="nav-link">Log In</a>
@@ -29,7 +34,7 @@
             <div class="hero-content">
                 <div class="hero-images">
                     <div class="image-stack">
-                        <img src="./image/main pic.jpg" alt="Technical Learning" class="hero-img hero-img-1">
+                        <img src="/courses/image/main pic.jpg" alt="Technical Learning" class="hero-img hero-img-1">
                     </div>
 
                 </div>
@@ -57,104 +62,141 @@
             <div class="courses-grid">
                 <div class="course-card">
                     <div class="course-image">
-                        <img src="./image/css.jpg" alt="CSS">
-                        <div class="course-badges">
+                        <img src="/courses/image/css.jpg" alt="CSS">
+                        <!-- <div class="course-badges">
                             <span class="badge badge-free">Free Trial</span>
                             <span class="badge badge-ai">AI skills ✨</span>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="course-content">
                         <div class="course-logo">
-                            <img src="./image/Google.svg" alt="Google" class="google-logo">
+                            <img src="/courses/image/ColoredLogo.svg" alt="iti" class="iti-logo">
                         </div>
-                        <h3 class="course-title">Google Data Analytics</h3>
+                        <h3 class="course-title">CSS</h3>
                         <div class="course-info">
                             <span class="info-item">
                                 <i class="icon-degree"></i>
-                                Build toward a degree
+                                Learn how to style beautiful, responsive websites by joining this class and CSS.
                             </span>
                             <span class="course-type">Professional Certificate</span>
+                            <button class="enroll">Enroll</button>
                         </div>
                     </div>
                 </div>
                 <div class="course-card">
                     <div class="course-image">
-                        <img src="./image/html.jpg" alt="HTML">
-                        <div class="course-badges">
+                        <img src="/courses/image/html.jpg" alt="HTML">
+                        <!-- <div class="course-badges">
                             <span class="badge badge-free">Free Trial</span>
                             <span class="badge badge-ai">AI skills ✨</span>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="course-content">
                         <div class="course-logo">
-                            <img src="./image/Google.svg" alt="Google" class="google-logo">
+                            <img src="/courses/image/ColoredLogo.svg" alt="iti" class="iti-logo">
                         </div>
-                        <h3 class="course-title">Google Project Management</h3>
+                        <h3 class="course-title">Html</h3>
                         <div class="course-info">
                             <span class="info-item">
                                 <i class="icon-degree"></i>
-                                Build toward a degree
-                            </span>
+                                Discover the structure of the web. Join this class to build your foundation with HTML. </span>
                             <span class="course-type">Professional Certificate</span>
+                            <button class="enroll">Enroll</button>
                         </div>
                     </div>
                 </div>
                 <div class="course-card">
                     <div class="course-image">
-                        <img src="./image/php.jpg" alt="PHP">
-                        <div class="course-badges">
+                        <img src="/courses/image/php.jpg" alt="PHP">
+                        <!-- <div class="course-badges">
                             <span class="badge badge-free">Free Trial</span>
                             <span class="badge badge-ai">AI skills ✨</span>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="course-content">
                         <div class="course-logo">
-                            <img src="./image/Google.svg" alt="Google" class="google-logo">
+                            <img src="/courses/image/ColoredLogo.svg" alt="iti" class="iti-logo">
                         </div>
-                        <h3 class="course-title">Google IT Support</h3>
+                        <h3 class="course-title">Php</h3>
                         <div class="course-info">
                             <span class="info-item">
                                 <i class="icon-degree"></i>
-                                Build toward a degree
-                            </span>
+                                Learn how to build powerful server-side applications by joining our PHP course today </span>
                             <span class="course-type">Professional Certificate</span>
+                            <button class="enroll">Enroll</button>
                         </div>
                     </div>
                 </div>
                 <div class="course-card">
                     <div class="course-image">
-                        <img src="./image/laravel.jpg" alt="Laravel">
-                        <div class="course-badges">
+                        <img src="/courses/image/laravel.jpg" alt="Laravel">
+                        <!-- <div class="course-badges">
                             <span class="badge badge-free">Free Trial</span>
                             <span class="badge badge-ai">AI skills ✨</span>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="course-content">
                         <div class="course-logo">
-                            <img src="./image/Google.svg" alt="Google" class="google-logo">
+                            <img src="/courses/image/ColoredLogo.svg" alt="iti" class="iti-logo">
                         </div>
-                        <h3 class="course-title">Google UX Design</h3>
+                        <h3 class="course-title">Laravel</h3>
                         <div class="course-info">
                             <span class="info-item">
                                 <i class="icon-degree"></i>
-                                Build toward a degree
+                                Master modern PHP development with Laravel. Join this class to level up your skills.
                             </span>
                             <span class="course-type">Professional Certificate</span>
+                            <button class="enroll">Enroll</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="courses-actions">
-                <button class="btn btn-primary">Show 8 more</button>
-                <button class="btn btn-secondary">View all →</button>
-            </div>
+         
         </div>
     </section>
-    <footer class="footer">
-        <div class="container">
-            <p>© 2025 iti team. All rights reserved.</p>
+    <footer>
+        <div class="footer-content">
+
+            <div class="footer_logo">
+                <img src="/courses/image/Group1.svg" alt="Logo" />
+            </div>
+
+            <div class="quick_links">
+                <h4>QUICK LINKS</h4>
+                <a href="#">About Us</a>
+                <a href="#">Contact</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Help</a>
+            </div>
+
+            <div class="contact">
+                <h4>CONTACT</h4>
+                <div id="email">
+                    <img src="/courses/image/email.jpg" alt="Email Icon" />
+                    <p>Email: coursera@gamil.com</p>
+                </div>
+                <div id="phone">
+                    <img src="/courses/image/phone.jpg" alt="Phone Icon" />
+                    <p>Phone: +20 123 456 789</p>
+                </div>
+                <div id="address">
+                    <img src="/courses/image/address.jpg" alt="Address Icon" />
+                    <p>Address: Cairo, Egypt</p>
+                </div>
+            </div>
+
+            <div class="sponsor">
+                <h3>OUR SPONSOR</h3>
+                <a href="https://iti.gov.eg/home">
+                    <img src="/courses/image/ColoredLogo.svg" alt="ITI Logo">
+                </a>
+            </div>
+
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 coursera. All rights reserved.</p>
         </div>
     </footer>
 </body>
 
-</html>git commit -m "Initial commit"
+</html>

@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log In</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="/courses/assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="login-container">
         <div class="login-visual">
             <div class="visual-content">
-                <img src="./image/Group1.svg" alt="Platform Logo" class="visual-logo">
+                <img src="/courses/image/Group1.svg" alt="Platform Logo" class="visual-logo">
                 <h2 class="visual-title">Welcome to Learning</h2>
             </div>
         </div>

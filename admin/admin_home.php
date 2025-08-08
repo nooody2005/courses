@@ -90,7 +90,7 @@
     });
   </script>
 
-  <!-- <footer>
+  <footer>
     <div class="footer-content">
       <div class="footer_logo">
         <img src="/courses/image/Group1.svg" alt="Logo" />
@@ -131,7 +131,7 @@
     <div class="footer-bottom">
       <p>&copy; 2025 coursera. All rights reserved.</p>
     </div>
-  </footer> -->
+  </footer>
 </body>
 
 </html>

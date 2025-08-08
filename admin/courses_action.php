@@ -62,8 +62,14 @@
         </ul>
       </div>
     </div>
-
-
+    <div class="main-content">
+      <!-- //action wasn't added to the form-->
+      <form method="POST" action="courses_action.php" enctype="multipart/form-data" class="add_course_form actions-main2 ">
+        <div class="actions-main">
+          <a href="add_course.php">add course</a>
+        </div>
+      </form>
+    </div>
   </div>
 
   <script>
@@ -123,7 +129,6 @@
     </table>
 
   </div>
-  <a href="add_course.php">add course</a>
 </body>
 
 </html>

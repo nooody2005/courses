@@ -35,7 +35,7 @@ body {
   width: 60px;
   display: block;
 }
-.header .container .logo{
+.header .container .logo {
   display: flex;
   align-items: center;
   gap: 20px;
@@ -608,8 +608,6 @@ body {
 .signup-link .link:hover {
   text-decoration: underline;
 }
-
-/* Sidebar styles moved to bottom for better organization */
 .side_bar .side_bar-header {
   display: flex;
   align-items: center;
@@ -646,6 +644,10 @@ body {
   overflow: hidden;
   scrollbar-width: thin;
 }
+.submenu .menu-list .main-icon {
+  display: flex;
+  align-items: center;
+}
 .side_bar .menu-list {
   display: flex;
   flex-direction: column;
@@ -662,11 +664,13 @@ body {
   color: black;
   transition: 0.3s;
 }
-.side_bar .menu-list a:is(:hover, .active) {
+.side_bar .menu-list a:not([class="log-out"]):is(:hover, .active) {
   background-color: #0056b3;
   color: white;
 }
-
+.menu-list .log-out:hover {
+  color: red;
+}
 .side_bar {
   width: 270px;
   transition: all 0.3s ease;
@@ -686,18 +690,6 @@ body {
 .side_bar.collapsed .personal-image {
   display: none;
 }
-
-/* Responsive design for smaller screens */
-@media (max-width: 768px) {
-  .main-layout {
-    flex-direction: column;
-  }
-  
-  .side_bar {
-    width: 100%;
-  }
-}
-/* Main layout container */
 .main-layout {
   display: flex;
   min-height: 100vh;

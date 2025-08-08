@@ -16,6 +16,7 @@
         <a href="index.php">
           <img src="/courses/image/logo page.svg" alt="Platform Logo" />
         </a>
+        <span>Courses</span>
       </div>
       <nav class="navigation">
         <div class="side_bar">

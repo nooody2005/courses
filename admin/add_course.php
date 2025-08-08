@@ -1,14 +1,17 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
+  <link rel="stylesheet" href="/courses/assets/css/all.min.css">
+  <link rel="stylesheet" href="/courses/assets/css/fontawesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <meta charset="UTF-8">
-   <link rel="stylesheet" href="/courses/assets/css/style.css">
+  <link rel="stylesheet" href="/courses/assets/css/style.css">
   <title>Update user</title>
- 
 </head>
 <body>
-    <header class="header">
+  <header class="header">
     <div class="container">
       <div class="logo">
         <a href="index.php">
@@ -35,9 +38,11 @@
       <div class="submenu">
         <ul class="menu-list">
           <li>
-          <img style="width:40px" src="/courses/image/home.png" >
-          <a href="" class="active">Main</a>
-        </li>
+            <a href="" class="active main-icon">
+              <i class="fa-solid fa-house"></i>
+              <span>Main</span>
+            </a>
+          </li>
 
           <!-- Collapsible Settings Button -->
           <li>
@@ -54,56 +59,51 @@
           </ul>
 
           <li><a class="menu-item delete" href="learning.php">My learning journey</a></li>
-          <li><a href="logout.php">Log out</a></li>
+          <li><a href="logout.php" class="log-out">Log out</a></li>
         </ul>
       </div>
     </div>
-    
+    <div class="main-content">
+      <!-- //action wasn't added to the form-->
+      <form method="POST" action="" enctype="multipart/form-data" class="add_course_form">
+        <label>
+          Course Name:
+        </label>
+        <input type="text" name="course_name" placeholder="Course name" required>
+
+        <label>
+          Course Image:
+        </label>
+        <input type="file" name="course_image" required>
+
+        <label>
+          Description:
+        </label>
+        <textarea name="description" placeholder="Add description" rows="5" required></textarea>
+
+        <a href="add_video.php">Add a video</a>
+
+        <button type="submit">Finish</button>
+      </form>
+    </div>
   </div>
 
   <script>
-    document.addEventListener("DOMContentLoaded", function () {
+    document.addEventListener("DOMContentLoaded", function() {
       const toggleBtn = document.getElementById("toggleSidebar");
       const sidebar = document.querySelector(".side_bar");
       const toggleSettingsBtn = document.getElementById("toggleSettings");
       const settingsMenu = document.getElementById("settingsMenu");
 
-      toggleBtn.addEventListener("click", function () {
+      toggleBtn.addEventListener("click", function() {
         sidebar.classList.toggle("collapsed");
       });
 
-      toggleSettingsBtn.addEventListener("click", function () {
+      toggleSettingsBtn.addEventListener("click", function() {
         settingsMenu.style.display = settingsMenu.style.display === "none" ? "block" : "none";
       });
     });
   </script>
-
-
-
-  <div class="main-content">
-
-
-<!-- //action wasn't added to the form-->
-<form method="POST" action="" enctype="multipart/form-data">
-  <label>
-    Course Name:
-    <input type="text" name="course_name" placeholder="Course name" required>
-  </label>
-
-  <label>
-    Course Image:
-    <input type="file" name="course_image"  required>
-  </label>
-
-  <label>
-    Description:
-    <textarea name="description" placeholder="Add description" rows="5" required></textarea>
-  </label>
-
-  <a href="add_video.php">Add a video</a>
-
-  <button type="submit">Finish</button>
-</form>
-  </div>
 </body>
+
 </html>

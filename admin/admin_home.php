@@ -4,6 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/courses/assets/css/all.min.css">
+  <link rel="stylesheet" href="/courses/assets/css/fontawesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="/courses/assets/css/style.css">
   <title>Home</title>
 </head>
@@ -36,9 +39,11 @@
       <div class="submenu">
         <ul class="menu-list">
           <li>
-          <img style="width:40px" src="/courses/image/home.png" >
-          <a href="" class="active">Main</a>
-        </li>
+            <a href="" class="active main-icon">
+              <i class="fa-solid fa-house"></i>
+              <span>Main</span>
+            </a>
+          </li>
 
           <!-- Collapsible Settings Button -->
           <li>
@@ -53,35 +58,38 @@
             <li><a href="#">Change Profile Picture</a></li>
             <li><a href="#">Change Password</a></li>
           </ul>
-          <li><a href="logout.php">Log out</a></li>
+          <li><a href="logout.php" class="log-out">Log out</a></li>
         </ul>
       </div>
     </div>
 
-    
+    <div class="main-content">
+      <!-- //action wasn't added to the form-->
+      <form method="POST" action="courses_action.php" enctype="multipart/form-data" class="add_course_form actions-main2 ">
+        <div class="actions-main">
+          <a href="courses_action.php">Courses actions</a>
+          <a href="user_action.php">user actions</a>
+        </div>
+      </form>
+    </div>
   </div>
-
   <script>
-    document.addEventListener("DOMContentLoaded", function () {
+    document.addEventListener("DOMContentLoaded", function() {
       const toggleBtn = document.getElementById("toggleSidebar");
       const sidebar = document.querySelector(".side_bar");
       const toggleSettingsBtn = document.getElementById("toggleSettings");
       const settingsMenu = document.getElementById("settingsMenu");
 
-      toggleBtn.addEventListener("click", function () {
+      toggleBtn.addEventListener("click", function() {
         sidebar.classList.toggle("collapsed");
       });
 
-      toggleSettingsBtn.addEventListener("click", function () {
+      toggleSettingsBtn.addEventListener("click", function() {
         settingsMenu.style.display = settingsMenu.style.display === "none" ? "block" : "none";
       });
     });
   </script>
-<div>
-    <a href="courses_action.php">Courses actions</a>
-    <a href="user_action.php">user actions</a>
 
-</div>
   <!-- <footer>
     <div class="footer-content">
       <div class="footer_logo">

@@ -1,13 +1,17 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>courses</title>
+  <link rel="stylesheet" href="/courses/assets/css/all.min.css">
+  <link rel="stylesheet" href="/courses/assets/css/fontawesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="/courses/assets/css/style.css">
 </head>
+
 <body>
-   <header class="header">
+  <header class="header">
     <div class="container">
       <div class="logo">
         <a href="index.php">
@@ -34,9 +38,11 @@
       <div class="submenu">
         <ul class="menu-list">
           <li>
-          <img style="width:40px" src="/courses/image/home.png" >
-          <a href="" class="active">Main</a>
-        </li>
+            <a href="" class="active main-icon">
+              <i class="fa-solid fa-house"></i>
+              <span>Main</span>
+            </a>
+          </li>
 
           <!-- Collapsible Settings Button -->
           <li>
@@ -52,26 +58,26 @@
             <li><a href="#">Change Password</a></li>
           </ul>
 
-          <li><a href="logout.php">Log out</a></li>
+          <li><a href="logout.php" class="log-out">Log out</a></li>
         </ul>
       </div>
     </div>
 
-    
+
   </div>
 
   <script>
-    document.addEventListener("DOMContentLoaded", function () {
+    document.addEventListener("DOMContentLoaded", function() {
       const toggleBtn = document.getElementById("toggleSidebar");
       const sidebar = document.querySelector(".side_bar");
       const toggleSettingsBtn = document.getElementById("toggleSettings");
       const settingsMenu = document.getElementById("settingsMenu");
 
-      toggleBtn.addEventListener("click", function () {
+      toggleBtn.addEventListener("click", function() {
         sidebar.classList.toggle("collapsed");
       });
 
-      toggleSettingsBtn.addEventListener("click", function () {
+      toggleSettingsBtn.addEventListener("click", function() {
         settingsMenu.style.display = settingsMenu.style.display === "none" ? "block" : "none";
       });
     });
@@ -95,28 +101,29 @@
       </thead>
       <tbody>
         <?php foreach ($students as $student): ?>
-        <tr>
-          <td><?php echo htmlspecialchars($student['id']); ?></td>
-          <td><?php echo htmlspecialchars($student['fname']); ?></td>
-          <td><?php echo htmlspecialchars($student['email']); ?></td>
-          <td><?php echo htmlspecialchars($student['phone']); ?></td>
-          <td><?php echo htmlspecialchars($student['city']); ?></td>
-          <td><?php echo htmlspecialchars($student['skills'] ?? 'No skills'); ?></td>
-          <td><?php
-          if(empty($student['monitor']))echo"not added";
-           else echo htmlspecialchars($student['monitor']); ?></td>
-          <td>
-            <?php if($student['email']!=$email){ ?>
-            <a href="add_video.php?id=<?php echo urlencode($student['id']); ?>" class="btn btn-update">Edit course</a>
-            <a href="delete_course.php?id=<?php echo urlencode($student['id']); ?>" class="btn btn-delete">Delete course</a>
-            <?php } ?>
-          </td>
-        </tr>
+          <tr>
+            <td><?php echo htmlspecialchars($student['id']); ?></td>
+            <td><?php echo htmlspecialchars($student['fname']); ?></td>
+            <td><?php echo htmlspecialchars($student['email']); ?></td>
+            <td><?php echo htmlspecialchars($student['phone']); ?></td>
+            <td><?php echo htmlspecialchars($student['city']); ?></td>
+            <td><?php echo htmlspecialchars($student['skills'] ?? 'No skills'); ?></td>
+            <td><?php
+                if (empty($student['monitor'])) echo "not added";
+                else echo htmlspecialchars($student['monitor']); ?></td>
+            <td>
+              <?php if ($student['email'] != $email) { ?>
+                <a href="add_video.php?id=<?php echo urlencode($student['id']); ?>" class="btn btn-update">Edit course</a>
+                <a href="delete_course.php?id=<?php echo urlencode($student['id']); ?>" class="btn btn-delete">Delete course</a>
+              <?php } ?>
+            </td>
+          </tr>
         <?php endforeach; ?>
       </tbody>
     </table>
 
   </div>
-    <a href="add_course.php">add course</a>
+  <a href="add_course.php">add course</a>
 </body>
+
 </html>

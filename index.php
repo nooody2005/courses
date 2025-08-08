@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="/courses/assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
     <header class="header">
         <div class="container">
@@ -63,10 +62,7 @@
                 <div class="course-card">
                     <div class="course-image">
                         <img src="/courses/image/css.jpg" alt="CSS">
-                        <!-- <div class="course-badges">
-                            <span class="badge badge-free">Free Trial</span>
-                            <span class="badge badge-ai">AI skills ✨</span>
-                        </div> -->
+                        
                     </div>
                     <div class="course-content">
                         <div class="course-logo">
@@ -79,17 +75,16 @@
                                 Learn how to style beautiful, responsive websites by joining this class and CSS.
                             </span>
                             <span class="course-type">Professional Certificate</span>
-                            <button class="enroll">Enroll</button>
+                            <a href="log in.php">
+                            <button class="enroll" href="login_pop.php">Enroll</button>
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div class="course-card">
                     <div class="course-image">
                         <img src="/courses/image/html.jpg" alt="HTML">
-                        <!-- <div class="course-badges">
-                            <span class="badge badge-free">Free Trial</span>
-                            <span class="badge badge-ai">AI skills ✨</span>
-                        </div> -->
+                       
                     </div>
                     <div class="course-content">
                         <div class="course-logo">
@@ -101,17 +96,16 @@
                                 <i class="icon-degree"></i>
                                 Discover the structure of the web. Join this class to build your foundation with HTML. </span>
                             <span class="course-type">Professional Certificate</span>
-                            <button class="enroll">Enroll</button>
+                              <a href="log in.php">
+                            <button class="enroll" href="login_pop.php">Enroll</button>
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div class="course-card">
                     <div class="course-image">
                         <img src="/courses/image/php.jpg" alt="PHP">
-                        <!-- <div class="course-badges">
-                            <span class="badge badge-free">Free Trial</span>
-                            <span class="badge badge-ai">AI skills ✨</span>
-                        </div> -->
+                      
                     </div>
                     <div class="course-content">
                         <div class="course-logo">
@@ -123,17 +117,16 @@
                                 <i class="icon-degree"></i>
                                 Learn how to build powerful server-side applications by joining our PHP course today </span>
                             <span class="course-type">Professional Certificate</span>
-                            <button class="enroll">Enroll</button>
+                             <a href="log in.php">
+                            <button class="enroll" href="login_pop.php">Enroll</button>
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div class="course-card">
                     <div class="course-image">
                         <img src="/courses/image/laravel.jpg" alt="Laravel">
-                        <!-- <div class="course-badges">
-                            <span class="badge badge-free">Free Trial</span>
-                            <span class="badge badge-ai">AI skills ✨</span>
-                        </div> -->
+    
                     </div>
                     <div class="course-content">
                         <div class="course-logo">
@@ -146,7 +139,9 @@
                                 Master modern PHP development with Laravel. Join this class to level up your skills.
                             </span>
                             <span class="course-type">Professional Certificate</span>
-                            <button class="enroll">Enroll</button>
+                              <a href="log in.php">
+                            <button class="enroll" href="login_pop.php">Enroll</button>
+                            </a>
                         </div>
                     </div>
                 </div>

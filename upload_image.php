@@ -45,7 +45,7 @@
         }
 
         .input-box .submit-button {
-            background: #4f8cff;
+            background: #0056b3;
             color: #fff;
             border: none;
             border-radius: 6px;
